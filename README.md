@@ -19,7 +19,7 @@ pi@pi:~/myagv_ws$ sudo python3 src/myagv_node/myagv_node/lidar_off.py
 ### To view URDF on rViz
 To view myAGV URDF file on rViz, execute follwing launch script. 
 ```
-
+pi@pi:~/myagv_ws$ ros2 launch myagv_description view_launch.py 
 ```
 
 To operate myAGV wheel, execute follwoing launch script.
@@ -32,3 +32,8 @@ And open another terminal, execute follwing teleop node.
 pi@pi:~/myagv_ws$ ros2 run teleop_twist_keyboard  teleop_twist_keyboard
 ```
 You can operate vehicle wheel using some keys. 
+
+### To Dos 
+- Lidar still does not work.
+- viewing URDF of real myAGV to rViz
+- Adding Cartographer and navigation2 
